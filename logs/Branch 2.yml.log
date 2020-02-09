@@ -1,0 +1,42 @@
+No Change for Site Branch 2.
+ No Change for Waninterface Circuit to AT&T.
+ No Change for Waninterface Circuit to Comcast.
+ No Change for Spoke Cluster Branch 2 HA Group.
+ Element: Code is at correct version 5.2.1-b7.
+  Updating Element BR2-3K-1.
+   No Change for Interface internet 1internet bypass 1.
+   No Change for Interface controller 1.
+   No Change for Interface internet 2.
+   No Change for Interface internet bypass 2.
+   No Change for Interface lan 1.
+   No Change for Interface lan 2.
+   No Change for Interface lan 3.
+   No Change for Interface lan 4.
+   No Change for Interface wan 1.
+   No Change for Interface wan 2.
+   No Change for Interface wan 3.
+   No Change for Interface wan 4.
+   No Change for Spoke HA in Element BR2-3K-1.
+   No Change for BGP Global Config 15810558782610075.
+   No Change for Ntp default.
+   No Change for Toolkit 15807722204590143.
+ Element: Code is at correct version 5.2.1-b7.
+  Updating Element BR2-3K-2.
+   No Change for Interface internet 2internet bypass 2.
+   No Change for Interface controller 1.
+   No Change for Interface internet 1.
+   No Change for Interface internet bypass 1.
+   No Change for Interface lan 1.
+   No Change for Interface lan 2.
+   No Change for Interface lan 3.
+   No Change for Interface lan 4.
+   No Change for Interface wan 1.
+   No Change for Interface wan 2.
+   No Change for Interface wan 3.
+   No Change for Interface wan 4.
+   No Change for Spoke HA in Element BR2-3K-2.
+   No Change for BGP Global Config 15810556344150239.
+   No Change for Ntp default.
+   No Change for Toolkit 15807722155430052.
+No Change for Site Branch 2 state (active).
+DONE
