@@ -1,8 +1,8 @@
-## Updated CloudGenix Topology (Sun Feb  9 02:15:08 UTC 2020)
+## Updated CloudGenix Topology (Sun Feb  9 05:27:18 UTC 2020)
 
-From commit: ad5dd1dde97bf7189b7062525c1879971d041530 
+From commit: 488934dd45ef72bdb88c03a762ef7c4a49cc32e2 
 
-Travis CI job id: [1](https://travis-ci.com/CloudGenix/network-as-code/builds/148066598)
+Travis CI job id: [2](https://travis-ci.com/CloudGenix/network-as-code/builds/148073910)
 <img alt="Map Image" src="map.png?raw=1" width="1110">
 
 ### All Sites (updated in this commit and previous commits):
