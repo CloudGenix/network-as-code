@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/CloudGenix/network-as-code.svg?branch=master)](https://travis-ci.com/CloudGenix/network-as-code)
 [![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/pulls)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CloudGenix/network-as-code?color=brightgreen)](https://github.com/CloudGenix/network-as-code/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed)
 [![GitHub issues open](https://img.shields.io/github/issues/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/issues)
 ![GitHub License (MIT)](https://img.shields.io/github/license/CloudGenix/network-as-code?color=brightgreen)
 # CloudGenix Network as Code Demo Environment
