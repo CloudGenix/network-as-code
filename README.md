@@ -5,10 +5,10 @@
 [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed)
 [![GitHub issues open](https://img.shields.io/github/issues/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/issues)
 ![GitHub License (MIT)](https://img.shields.io/github/license/CloudGenix/network-as-code?color=brightgreen)
-# CloudGenix Network-as-Code Demo Environment
+# CloudGenix Network as Code Demo Environment
 Demo of a CloudGenix Network as Code Environment
 
-#### Concept
+### Concept
 Build an Enterprise-Class Remote Branch Office network using Coding tools and principles. Deploy, reconfigure at will.
 All changes are tracked and approved using traditional Git-flow tools.
 
@@ -19,7 +19,7 @@ Where is the source of truth that defines a network?
  - SDN (Even SD-WAN) Network: The source of truth *should be* the configuration that lives on the controller (Isn't always - depends on vendor 😊.) 
  - DevOps Application Network, Network as Code: The source of truth is *wherever* and *whatever* you want it to be..
 
-#### Environment Overview
+### Environment Overview
 
 ![Demo Overview](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/Demo-Overview.png)
 
@@ -33,13 +33,13 @@ Where is the source of truth that defines a network?
   * On failure can re-build, or check-in new changes to fix.
   * Logs and even CloudGenix UI screenshots are saved in the `results` branch.
   
-#### Tools Used
+### Tools Used
  - CloudGenix AppFabric SD-WAN Network - <https://www.cloudgenix.com>
  - CloudGenix Config CI/CD Utility - <https://github.com/CloudGenix/cloudgenix_config>
  - GitHub - <https://github.com>
  - Travis-ci - <https://travis-ci.com>
 
-#### Participate!
+### Participate!
 This demo isn't just for show. You too can make changes! To participate, do the following:
 1. On your GitHub account, fork this repository. You've now got a copy of this repository you can change and edit! [![GitHub forks](https://img.shields.io/github/forks/CloudGenix/network-as-code?style=social)](https://github.com/CloudGenix/network-as-code/fork)
 2. In the `configurations` directory, make some changes to one or more of the *.yml config files. You can do this right in GitHub by clicking "Edit File."
@@ -58,12 +58,12 @@ For best/quickest results, here are the easiest changes to approve:
 * Modify names of stuff (site and non-servicelink interface names can't be changed.)
 * Change DNS servers (Any well known public one should work.)
 
-#### Topology Detail
+### Topology Detail
 
 A diagram with more detail on the demo topology and port inter-connections:
 ![Topology Overview](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/Topology-Overview.png)
 
-#### License
+### License
 MIT
 
 
