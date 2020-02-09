@@ -1,6 +1,8 @@
-sudo: required  # not actually required, just allocates 7.5 GB system instead of 4 GB
+# Configuration file for Travis CI.
 language: python
 cache: pip
+os: linux
+dist: bionic
 
 branches:
   only:
