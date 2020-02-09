@@ -1,0 +1,29 @@
+sudo: required  # not actually required, just allocates 7.5 GB system instead of 4 GB
+language: python
+cache: pip
+
+branches:
+  only:
+  - master  # This will be whatever branch we want to be the "production" branch.
+
+addons:
+  chrome: stable  # For screenshots of completed builds.
+
+python:
+  - "3.7"
+
+install:
+  - git fetch --tags
+  - pip install selenium-wire
+  - pip install cloudgenix_config
+
+before_script:
+  - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
+  - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
+  - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
+  - unzip chromedriver_linux64.zip -d ~/bin
+
+script:
+  - bash ./scripts/deploy_changes.sh
+  - bash ./scripts/take_screenshots.sh
+  - bash ./scripts/push_results.sh
