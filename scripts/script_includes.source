@@ -1,0 +1,44 @@
+#!/bin/bash
+# Inclued file for common items between scripts
+# Variables expected set by the CI/CD before this script:
+# AUTH_TOKEN = Valid tenant_super CloudGenix Auth Token
+# GITHUB_REPO_TOKEN = Valid personal token that has Repository access to commit.
+# CI = name of CI system (travis, others future)
+# if Travis:
+# TRAVIS_COMMIT = Current commit hash
+# TRAVIS_BUILD_NUMBER = Job ID of this build
+# TRAVIS_BUILD_WEB_URL = URL to this build on travis-ci.com
+
+export SUPPORTED_CI="travis"
+
+# Color constants
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[1;33m'
+export WHITE='\033[1;37m'
+export NC='\033[0m'
+
+export EXIT_CODE=0
+
+# Set vars from Travis
+if [ "${USER}" == "travis" ]
+  then
+    export CI_SYSTEM="Travis CI"
+    export CI_COMMIT=${TRAVIS_COMMIT}
+    export CI_BUILD_ID=${TRAVIS_BUILD_NUMBER}
+    export CI_BUILD_URL=${TRAVIS_BUILD_WEB_URL}
+    # CI var already set.
+  else
+    # Jenkins, or other. (Future work for this shell script)
+    echo -e "${RED}ERROR: Unknown or Unsupported CI system for this script: '${USER}'. Expected one of ${SUPPORTED_CI}${NC}."
+    exit 1
+fi
+
+# Set IFS to LF to handle spaces.
+export IFS=$'\n'
+
+# Indent and pretty-fi function
+indent() { sed 's/^/    /'; }
+
+# Debug script (if needed)
+#set -x
