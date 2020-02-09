@@ -45,14 +45,14 @@ echo -e "${WHITE}Configuration Files Added or Modified:${NC}"
 echo "${MODIFIED_CONFIGS}" 2>&1 | indent
 
 # create tmp logs
-mkdir /tmp/logs
+mkdir -p /tmp/logs
 
 for SITE_CONFIG in ${MODIFIED_CONFIGS}
   do
     SITE_CONFIG_FILE=$(basename "${SITE_CONFIG}")
     echo -e -n "${WHITE}Executing ${SITE_CONFIG_FILE} Configuration: ${NC}"
     # Do the actual site config operations.
-    if do_site "${SITE_CONFIG}"  > "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
+    if do_site "${SITE_CONFIG}" > "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
       then
         echo -e "${GREEN}Success. ${NC}"
       else
@@ -102,7 +102,7 @@ git pull --no-commit -X theirs origin master 2>&1 | indent
 
 # copy logs to logs directory
 echo -e "${WHITE}Updating logs/ with new logs..${NC}"
-cp -a /tmp/logs/* logs/ 2>&1 | indent
+cp -av /tmp/logs/* logs/ 2>&1 | indent
 
 ## push logs to results repository. Using 2nd script for screenshots, uncomment this if you want deploy_changes.sh to be
 ## standalone.
