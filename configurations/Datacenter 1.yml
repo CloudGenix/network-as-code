@@ -11,7 +11,7 @@ sites v4.4:
       street: 55 S Market St
       street2:
     admin_state: active
-    description:
+    description: "Datacenter #1 (can be changed into a branch too!)"
     element_cluster_role: HUB
     elements v2.3:
       DC-7K-1:
