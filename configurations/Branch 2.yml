@@ -22,7 +22,7 @@ sites v4.4:
         cluster_member_id:
         connected: true
         deployment_op:
-        description:
+        description: "Element 1"
         element_security_zones v2.0: []
         interfaces v4.7:
           controller 1:
@@ -477,7 +477,7 @@ sites v4.4:
         cluster_member_id:
         connected: true
         deployment_op:
-        description:
+        description: "Element 2"
         element_security_zones v2.0: []
         interfaces v4.7:
           controller 1:
