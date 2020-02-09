@@ -1,4 +1,4 @@
-[![CloudGenix Logo](https://raw.githubusercontent.com/CloudGenix/sdk-python/develop/scripts/images/CloudGenix_Logo.png)](https://www.cloudgenix.com)
+[![CloudGenix Logo](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/CloudGenix_Logo.png)](https://www.cloudgenix.com)
 
 [![Build Status](https://travis-ci.com/CloudGenix/network-as-code.svg?branch=master)](https://travis-ci.com/CloudGenix/network-as-code)
 [![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/pulls)
@@ -12,7 +12,7 @@ Demo of a CloudGenix Network as Code Environment
 Build an Enterprise-Class Remote Branch Office network using Coding tools and principles. Deploy, reconfigure at will.
 All changes are tracked and approved using traditional Git-flow tools.
 
-![Network as Code](https://raw.githubusercontent.com/CloudGenix/sdk-python/develop/scripts/images/network-as-code.png)
+![Network as Code](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/network-as-code.png)
 
 Where is the source of truth that defines a network?
  - Traditional 'Router' Network: The source of truth is the "config file" on the Router.
@@ -21,7 +21,7 @@ Where is the source of truth that defines a network?
 
 #### Environment Overview
 
-![Demo Overview](https://raw.githubusercontent.com/CloudGenix/sdk-python/develop/scripts/images/Demo-Overview.png)
+![Demo Overview](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/Demo-Overview.png)
 
 * Active CloudGenix Network
   * For this example, 3 sites, 6 devices. 
@@ -61,7 +61,7 @@ For best/quickest results, here are the easiest changes to approve:
 #### Topology Detail
 
 A diagram with more detail on the demo topology and port inter-connections:
-![Topology Overview](https://raw.githubusercontent.com/CloudGenix/sdk-python/develop/scripts/images/Topology-Overview.png)
+![Topology Overview](https://raw.githubusercontent.com/CloudGenix/network-as-code/develop/scripts/images/Topology-Overview.png)
 
 #### License
 MIT
