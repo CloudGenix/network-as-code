@@ -17,6 +17,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 
+# Default selenium items
+DEFAULT_IMPLICIT_WAIT = 25  # seconds
+
 
 # Create output function because print doesn't seem to flush enough
 def ci_print(text, end="\n", color=None):
@@ -98,8 +101,10 @@ UI_ELEMENT_SYSLOG = 'https://portal.{0}.cloudgenix.com/#element/config/{1}/syslo
 UI_ELEMENT_NTP = 'https://portal.{0}.cloudgenix.com/#element/config/{1}/ntp_client'
 UI_INTERFACES_DETAIL = 'https://portal.{0}.cloudgenix.com/#element/config/{1}/interfaces/{2}'
 
-XPATH_INTERFACE_EXPANDS = "/html/body/div[1]/section/div/div[2]/div/div/div[2]/div/div/div[3]/div/div/form/" \
-                          "div[2]/div/div/div[1]/a"
+XPATH_1_INTERFACE_EXPANDS = "/html/body/div[1]/section/div/div[2]/div/div/div[2]/div/div/div[3]/div/div/form/" \
+                            "div[2]/div/div/div[1]/a"
+XPATH_2_INTERFACE_EXPANDS = "/html/body/div[1]/section/div/div[2]/div/div/div[2]/div/div/div[3]/div/div/form/" \
+                            "div[3]/div/div/div[1]/a"
 XPATH_CLOSE_WHATS_NEW = "/html/body/div[1]/div[4]/div/div/img"
 
 FILENAME_VALID_CHARS = '-_.() abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
@@ -121,14 +126,14 @@ def is_int(val):
     :return: Boolean, True if success
     """
     try:
-        num = int(val)
+        _ = int(val)
     except ValueError:
         return False
     return True
 
 
 def screenshot_page(page_uri, sel_driver, output_filename, waitfor="time", waitfor_value="30", click_xpath=None,
-                    click_index=None, load_wait=20, load_tweak_delay=2):
+                    click_xpath2=None, load_wait=15, load_tweak_delay=1):
     """
     Load and save a screnshot from the CGX UI
     :param page_uri: URI of page to get
@@ -137,12 +142,14 @@ def screenshot_page(page_uri, sel_driver, output_filename, waitfor="time", waitf
     :param waitfor: Can be int (raw time), or id or class
     :param waitfor_value: ID or Class Name to wait for, if waitfor set to class or ID
     :param click_xpath: Optional - Full XPATH of element to load and click.
-    :param click_index: Optional - List of ints (indexes) of dom to click.
+    :param click_xpath2: Optional - Second XPATH to load and click.
     :param load_wait: Default time for waitfor object to load.
     :param load_tweak_delay:
     :return:
     """
 
+    # Time the screenshot.
+    start = time.perf_counter()
     try:
         # Get page
         sel_driver.get(page_uri)
@@ -169,41 +176,50 @@ def screenshot_page(page_uri, sel_driver, output_filename, waitfor="time", waitf
                  "".format(page_uri, waitfor, waitfor_value, load_wait),
                  color="yellow")
 
+    click_succeeded = 0
+    click_requested = 0
+
+    # For Find Element, it uses implicit wait. We want this to just try once. set to zero temporarily.
+    driver.implicitly_wait(0)
+
     if click_xpath is not None:
-        click_succeeded = 0
-        # need to click on something quickly. But wait 1 second..
-        time.sleep(1)
-        if isinstance(click_index, list):
-            # click multiple (interface)
-            for index in click_index:
-                try:
-                    click_dom = driver.find_elements_by_xpath(click_xpath)[index]
-                    click_dom.click()
-                    click_succeeded += 1
-                except IndexError:
-                    # got a miss on the DOM select/click. Let's continue without the click.
-                    pass
+        click_requested += 1
+        # single click (not nec interface)
+        try:
+            click_dom = driver.find_elements_by_xpath(click_xpath)[0]
+            click_dom.click()
+            click_succeeded += 1
+        except IndexError:
+            # got a miss on the DOM select/click. Let's continue without the click.
+            pass
 
-        else:
-            click_index = []
-            # single click (not nec interface)
-            try:
-                click_dom = driver.find_elements_by_xpath(click_xpath)[0]
-                click_dom.click()
-                click_succeeded += 1
-            except IndexError:
-                # got a miss on the DOM select/click. Let's continue without the click.
-                pass
+    if click_xpath2 is not None:
+        click_requested += 1
+        # single click (not nec interface)
+        try:
+            click_dom = driver.find_elements_by_xpath(click_xpath2)[0]
+            click_dom.click()
+            click_succeeded += 1
+        except IndexError:
+            # got a miss on the DOM select/click. Let's continue without the click.
+            pass
 
+    if click_xpath or click_xpath2:
         # print status
-        ci_print("Click({0} of {1} succeeded): ".format(click_succeeded, len(click_index)), end="")
-
+        ci_print("Click({0} of {1} succeeded) ".format(click_succeeded, click_requested), end="")
+    # set implicit wait back.
+    driver.implicitly_wait(DEFAULT_IMPLICIT_WAIT)
     # Tweak delay
     time.sleep(load_tweak_delay)
     driver.get_screenshot_as_file(output_filename)
-
+    # print the time
+    stop = time.perf_counter()
+    ci_print(f"(Elapsed {stop - start:0.4f}s): ", end="")
     return
 
+
+# script start timer
+script_start = time.perf_counter()
 
 # quick check we have 1 argument.
 if len(sys.argv) != 2:
@@ -224,7 +240,7 @@ except IOError as e:
     sys.exit(1)
 
 # let user know it worked.
-print("    Loaded Config File {0}.".format(config_file))
+ci_print("    Loaded Config File {0}.".format(config_file))
 
 # create a site name-> ID dict and element name->ID dict.
 sdk = cloudgenix.API()
@@ -255,9 +271,10 @@ driver = webdriver.Chrome(chrome_options=options)
 
 # Interactive launch of the above, for debugging.
 # driver = webdriver.Chrome()
+# driver.set_window_size(1920, 1080)
 
-# wait for 30 secs for all operations.
-driver.implicitly_wait(30)
+# wait for DEFAULT_IMPLICIT_WAIT secs for all operations.
+driver.implicitly_wait(DEFAULT_IMPLICIT_WAIT)
 # default dom wait timer
 delay = 20  # seconds
 # default post dom wait timer
@@ -267,6 +284,9 @@ tweak_delay = 2  # seconds
 driver.header_overrides = {
     'X-Auth-Token': CLOUDGENIX_AUTH_TOKEN,
 }
+
+# start screenshot timer.
+screenshot_start = time.perf_counter()
 
 # Get map page to process and cache login
 ci_print("    Logging in and taking topology screenshot: ", end="")
@@ -439,7 +459,7 @@ for site_name, elements_list in sites_dict.items():
                 uri = UI_INTERFACES_DETAIL.format(region, element_id, interface_id)
                 filename = interface_directory + "{0}.png".format(interface_fs_name)
                 screenshot_page(uri, driver, filename, waitfor="class", waitfor_value='collapsible-form__toggle',
-                                click_xpath=XPATH_INTERFACE_EXPANDS, click_index=[0, 1])
+                                click_xpath=XPATH_1_INTERFACE_EXPANDS, click_xpath2=XPATH_2_INTERFACE_EXPANDS)
                 ci_print("Done", color="green")
 
                 # save markdown info
@@ -456,6 +476,8 @@ for site_name, elements_list in sites_dict.items():
 
 # close the web page rendering engine
 driver.close()
+# save screenshot stop
+screenshot_stop = time.perf_counter()
 
 ci_print("    Creating changed item Markdown Indexes..", color="white")
 # prep to generate markdown indexes.
@@ -464,7 +486,7 @@ for site in markdown_index:
     site_readme_md = f"""\
 ## Site: {site['name']}{f'''
 
-commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
+commit: {CI_COMMIT}''' if CI_COMMIT else ""}{f'''
 
 {CI_SYSTEM} job id: [{CI_BUILD_ID}]({CI_BUILD_URL})''' if CI_SYSTEM else ""}
 
@@ -480,7 +502,7 @@ commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
         element_readme_md = f"""\
 ## Element: {element['name']}{f'''
 
-commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
+commit: {CI_COMMIT}''' if CI_COMMIT else ""}{f'''
 
 {CI_SYSTEM} job id: [{CI_BUILD_ID}]({CI_BUILD_URL})''' if CI_SYSTEM else ""}
 
@@ -534,7 +556,7 @@ commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
         interface_readme_md = f"""\
 ## Element: {element['name']} Interfaces{f'''
 
-commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
+commit: {CI_COMMIT}''' if CI_COMMIT else ""}{f'''
 
 {CI_SYSTEM} job id: [{CI_BUILD_ID}]({CI_BUILD_URL})''' if CI_SYSTEM else ""}
 
@@ -579,3 +601,8 @@ commit:{CI_COMMIT}''' if CI_COMMIT else ""}{f'''
     with open(site_readme_filename, 'w') as site_readme_fd:
         site_readme_fd.write(site_readme_md)
     ci_print("Done", color="green")
+
+# Script stop timer
+script_stop = time.perf_counter()
+ci_print(f"    File {config_file} completed. Screenshot time: {screenshot_stop - screenshot_start:0.4f}s, Total elapsed"
+         f" time: {script_stop - script_start:0.4f}s")
