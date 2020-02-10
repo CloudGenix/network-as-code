@@ -11,7 +11,7 @@ sites v4.4:
       street: 701 N Milwaukee Ave
       street2:
     admin_state: active
-    description: "Branch Site #1"
+    description: "Branch Site #1 + Tanushree edit"
     element_cluster_role: SPOKE
     elements v2.3:
       BR1-2K-1:
@@ -43,6 +43,7 @@ sites v4.4:
                 name_servers:
                 - 8.8.8.8
                 - 8.8.4.4
+                - 10.1.100.10
               routes:
               static_config:
                 address: 10.1.100.1/24
