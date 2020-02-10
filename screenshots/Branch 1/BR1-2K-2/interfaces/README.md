@@ -1,8 +1,8 @@
 ## Element: BR1-2K-2 Interfaces
 
-commit: aafa493179583271b191592de88b5b65061c0108
+commit: 9db06cac9f7efcad974768ccefb26051c2f3c37a
 
-Travis CI job id: [5](https://travis-ci.com/CloudGenix/network-as-code/builds/148277212)
+Travis CI job id: [6](https://travis-ci.com/CloudGenix/network-as-code/builds/148279717)
 
 [Back To Element](../README.md)
 
