@@ -1,11 +1,11 @@
-Updated Site Branch 1 (Etag 6 -> 7).
+Updated Site Branch 1 (Etag 7 -> 8).
  No Change for Waninterface Circuit to Comcast.
  No Change for Waninterface Circuit to Verizon.
  No Change for Spoke Cluster Branch1 HA Group.
  Element: Code is at correct version 5.2.1-b7.
   No Change for Element BR1-2K-1.
    No Change for Interface 45.
-   Updated Interface 1 (Etag 5 -> 6).
+   No Change for Interface 1.
    No Change for Interface 2.
    No Change for Interface 3.
    No Change for Interface controller.
