@@ -4,11 +4,11 @@ version: 1.0
 sites v4.4:
   Branch 1:
     address:
-      city: Chicago
+      city: Houston
       country: United States
       post_code: '60642'
-      state: IL
-      street: 701 N Milwaukee Ave
+      state: TX
+      street: 501 Crawford St.
       street2:
     admin_state: active
     description: "Branch Site #1 + Tanushree edit"
