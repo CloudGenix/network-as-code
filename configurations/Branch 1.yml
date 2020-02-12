@@ -547,8 +547,8 @@ sites v4.4:
         vpn_to_vpn_forwarding: false
     location:
       description:
-      latitude: 41.894527435302734
-      longitude: -87.65276336669922
+      latitude: 29.7604
+      longitude: -95.358421
     nat_policysetstack_id: Default NAT PolicySet Stack
     network_policysetstack_id: Default Path Policyset Stack (Simple)
     policy_set_id:
