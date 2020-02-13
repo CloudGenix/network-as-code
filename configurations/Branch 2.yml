@@ -4,14 +4,14 @@ version: 1.0
 sites v4.4:
   Branch 2:
     address:
-      city: New York
+      city: Louisburg
       country: United States
-      post_code: '10036'
+      post_code: '66053'
       state: NY
       street: 103 W 42nd St
       street2:
     admin_state: active
-    description: "Branch Site #2"
+    description: "Carls House"
     element_cluster_role: SPOKE
     elements v2.3:
       BR2-3K-1:
