@@ -14,7 +14,7 @@ sites v4.4:
     description: "Branch Site #1 + Tanushree edit"
     element_cluster_role: SPOKE
     elements v2.3:
-   location:
+    location:
       description:
       latitude: 29.7604
       longitude: -95.358421
