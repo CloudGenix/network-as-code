@@ -1,42 +1,4 @@
 No Change for Site Datacenter 1.
  No Change for Waninterface Circuit to HE.NET.
-Un-assigning Element DC-7K-2(70-001082-0748) bound to 15810531603860000.
- Removing LAN Networks/WAN Interfaces from 10.
- Removing LAN Networks/WAN Interfaces from 6.
- Removing LAN Networks/WAN Interfaces from 3.
- Removing LAN Networks/WAN Interfaces from controller 1.
- Removing LAN Networks/WAN Interfaces from 8.
- Removing LAN Networks/WAN Interfaces from 14.
- Removing LAN Networks/WAN Interfaces from 1.
- Removing LAN Networks/WAN Interfaces from 9.
- Removing LAN Networks/WAN Interfaces from 4.
- Removing LAN Networks/WAN Interfaces from 7.
- Removing LAN Networks/WAN Interfaces from 2.
- Removing LAN Networks/WAN Interfaces from 5.
- Removing LAN Networks/WAN Interfaces from 13.
- Removing LAN Networks/WAN Interfaces from 12.
- Removing LAN Networks/WAN Interfaces from 11.
- Removing any leftover Element Security Zones and Spoke HA from DC-7K-2:
-   Deleting Unconfigured Staticroute 15811458604410092.
-   No Change for Spoke HA in Element DC-7K-2.
-Un-assigning Element DC-7K-1(70-002077-9880) bound to 15810531603860000.
- Removing LAN Networks/WAN Interfaces from 11.
- Removing LAN Networks/WAN Interfaces from 8.
- Removing LAN Networks/WAN Interfaces from 3.
- Removing LAN Networks/WAN Interfaces from 14.
- Removing LAN Networks/WAN Interfaces from 5.
- Removing LAN Networks/WAN Interfaces from 9.
- Removing LAN Networks/WAN Interfaces from 13.
- Removing LAN Networks/WAN Interfaces from 6.
- Removing LAN Networks/WAN Interfaces from 4.
- Removing LAN Networks/WAN Interfaces from 12.
- Removing LAN Networks/WAN Interfaces from 7.
- Removing LAN Networks/WAN Interfaces from 2.
- Removing LAN Networks/WAN Interfaces from controller 1.
- Removing LAN Networks/WAN Interfaces from 10.
- Removing LAN Networks/WAN Interfaces from 1.
- Removing any leftover Element Security Zones and Spoke HA from DC-7K-1:
-   Deleting Unconfigured Staticroute 15811457998080057.
-   No Change for Spoke HA in Element DC-7K-1.
 No Change for Site Datacenter 1 state (active).
 DONE
