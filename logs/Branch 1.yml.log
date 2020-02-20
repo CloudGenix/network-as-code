@@ -1,28 +1,31 @@
-Updated Site Branch 1 (Etag 8 -> 9).
- No Change for Waninterface Circuit to Comcast.
- No Change for Waninterface Circuit to Verizon.
- No Change for Spoke Cluster Branch1 HA Group.
- Element: Code is at correct version 5.2.1-b7.
-  No Change for Element BR1-2K-1.
-   No Change for Interface 45.
-   No Change for Interface 1.
-   No Change for Interface 2.
-   No Change for Interface 3.
-   No Change for Interface controller.
-   No Change for Spoke HA in Element BR1-2K-1.
-   No Change for BGP Global Config 15810545963690077.
-   No Change for Ntp default.
-   No Change for Toolkit 15756831985120185.
- Element: Code is at correct version 5.2.1-b7.
-  No Change for Element BR1-2K-2.
-   No Change for Interface 45.
-   No Change for Interface 1.
-   No Change for Interface 2.
-   No Change for Interface 3.
-   No Change for Interface controller.
-   No Change for Spoke HA in Element BR1-2K-2.
-   No Change for BGP Global Config 15810550328370053.
-   No Change for Ntp default.
-   No Change for Toolkit 15810524358500001.
-No Change for Site Branch 1 state (active).
-DONE
+Traceback (most recent call last):
+  File "/home/travis/virtualenv/python3.7.1/bin/do_site", line 10, in <module>
+    sys.exit(go())
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/cloudgenix_config/do.py", line 7635, in go
+    loaded_config = yaml.safe_load(datafile)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/__init__.py", line 162, in safe_load
+    return load(stream, SafeLoader)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/constructor.py", line 41, in get_single_data
+    node = self.get_single_node()
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/yaml/parser.py", line 439, in parse_block_mapping_key
+    "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "configurations/Branch 1.yml", line 5, column 3
+expected <block end>, but found '<block mapping start>'
+  in "configurations/Branch 1.yml", line 17, column 4

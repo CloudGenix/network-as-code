@@ -1,42 +1,33 @@
-Updated Site Branch 2 (Etag 6 -> 7).
+ERROR: Could not strip config from internet 2internet bypass 2: 
+{
+    "_etag": 0,
+    "_content_length": "0",
+    "_schema": 0,
+    "_created_on_utc": 0,
+    "_updated_on_utc": 0,
+    "_status_code": "400",
+    "_request_id": "1582215194872022099998278986545035300222",
+    "_error": [
+        {
+            "code": "INTERFACE_REFERRED_IN_SPOKEHA_CONFIG",
+            "message": "Specified interface is being referred in Spoke HA configuration"
+        }
+    ]
+}
+No Change for Site Branch 2.
  No Change for Waninterface Circuit to AT&T.
  No Change for Waninterface Circuit to Comcast.
  No Change for Spoke Cluster Branch 2 HA Group.
- Element: Code is at correct version 5.2.1-b7.
-  No Change for Element BR2-3K-1.
-   No Change for Interface internet 1internet bypass 1.
-   No Change for Interface controller 1.
-   No Change for Interface internet 2.
-   No Change for Interface internet bypass 2.
-   No Change for Interface lan 1.
-   No Change for Interface lan 2.
-   No Change for Interface lan 3.
-   No Change for Interface lan 4.
-   No Change for Interface wan 1.
-   No Change for Interface wan 2.
-   No Change for Interface wan 3.
-   No Change for Interface wan 4.
-   No Change for Spoke HA in Element BR2-3K-1.
-   No Change for BGP Global Config 15810558782610075.
-   No Change for Ntp default.
-   No Change for Toolkit 15807722204590143.
- Element: Code is at correct version 5.2.1-b7.
-  No Change for Element BR2-3K-2.
-   No Change for Interface internet 2internet bypass 2.
-   No Change for Interface controller 1.
-   No Change for Interface internet 1.
-   No Change for Interface internet bypass 1.
-   No Change for Interface lan 1.
-   No Change for Interface lan 2.
-   No Change for Interface lan 3.
-   No Change for Interface lan 4.
-   No Change for Interface wan 1.
-   No Change for Interface wan 2.
-   No Change for Interface wan 3.
-   No Change for Interface wan 4.
-   No Change for Spoke HA in Element BR2-3K-2.
-   No Change for BGP Global Config 15810556344150239.
-   No Change for Ntp default.
-   No Change for Toolkit 15807722155430052.
-No Change for Site Branch 2 state (active).
-DONE
+Un-assigning Element BR2-3K-2(30-003408-1258) bound to 15810529935270122.
+ Removing LAN Networks/WAN Interfaces from wan 3.
+ Removing LAN Networks/WAN Interfaces from wan 4.
+ Removing LAN Networks/WAN Interfaces from lan 2.
+ Removing LAN Networks/WAN Interfaces from wan 1.
+ Removing LAN Networks/WAN Interfaces from internet bypass 1.
+ Removing LAN Networks/WAN Interfaces from internet 1.
+ Removing LAN Networks/WAN Interfaces from lan 4.
+ Removing LAN Networks/WAN Interfaces from lan 1.
+ Removing LAN Networks/WAN Interfaces from wan 2.
+ Removing LAN Networks/WAN Interfaces from controller 1.
+ Removing LAN Networks/WAN Interfaces from lan 3.
+ Removing LAN Networks/WAN Interfaces from internet 2internet bypass 2.
