@@ -4,7 +4,7 @@ version: 1.0
 sites v4.4:
   Datacenter 1:
     address:
-      city: San Jose
+      city: San Jose 
       country: United States
       post_code: '95113'
       state: CA
