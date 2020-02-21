@@ -1,26 +1,28 @@
-ERROR: Could not strip config from 45: 
-{
-    "_etag": 0,
-    "_content_length": "0",
-    "_schema": 0,
-    "_created_on_utc": 0,
-    "_updated_on_utc": 0,
-    "_status_code": "400",
-    "_request_id": "1582243868420019599999056697198004651667",
-    "_error": [
-        {
-            "code": "INTERFACE_REFERRED_IN_SPOKEHA_CONFIG",
-            "message": "Specified interface is being referred in Spoke HA configuration"
-        }
-    ]
-}
-Updated Site Branch 1 (Etag 10 -> 11).
+Updated Site Branch 1 (Etag 11 -> 12).
  No Change for Waninterface Circuit to Comcast.
  No Change for Waninterface Circuit to Verizon.
  No Change for Spoke Cluster Branch1 HA Group.
-Un-assigning Element BR1-2K-2(20-001638-7379) bound to 15810529126410213.
- Removing LAN Networks/WAN Interfaces from controller.
- Removing LAN Networks/WAN Interfaces from 2.
- Removing LAN Networks/WAN Interfaces from 1.
- Removing LAN Networks/WAN Interfaces from 3.
- Removing LAN Networks/WAN Interfaces from 45.
+ Element: Code is at correct version 5.2.1-b7.
+  No Change for Element BR1-2K-1.
+   No Change for Interface 45.
+   No Change for Interface 1.
+   No Change for Interface 2.
+   No Change for Interface 3.
+   No Change for Interface controller.
+   No Change for Spoke HA in Element BR1-2K-1.
+   No Change for BGP Global Config 15822229368370135.
+   No Change for Ntp default.
+   No Change for Toolkit 15822216568030135.
+ Element: Code is at correct version 5.2.1-b7.
+  No Change for Element BR1-2K-2.
+   No Change for Interface 45.
+   No Change for Interface 1.
+   No Change for Interface 2.
+   Updated Interface 3 (Etag 11 -> 12).
+   No Change for Interface controller.
+   No Change for Spoke HA in Element BR1-2K-2.
+   No Change for BGP Global Config 15822222398100050.
+   No Change for Ntp default.
+   No Change for Toolkit 15810524358500001.
+No Change for Site Branch 1 state (active).
+DONE

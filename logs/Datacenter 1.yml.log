@@ -1,4 +1,54 @@
+WARNING: Routing Prefix List auto-prefix-adv-and-distribute is auto_generated. Skipping.
+WARNING: Routing Prefix List auto-prefix-adv-no-distribute is auto_generated. Skipping.
+WARNING: Routing Prefix List auto-prefix-adv-and-distribute is auto_generated. Skipping.
+WARNING: Routing Prefix List auto-prefix-adv-no-distribute is auto_generated. Skipping.
 No Change for Site Datacenter 1.
  No Change for Waninterface Circuit to HE.NET.
+ Element: Code is at correct version 5.2.1-b7.
+  Assigning Element DC-7K-1.
+  Element DC-7K-1 not yet in requested state(s): bound (is bound_in_progress). Waited so far 0 seconds out of 600.
+   No Change for Interface 1.
+   No Change for Interface 10.
+   No Change for Interface 11.
+   No Change for Interface 12.
+   No Change for Interface 13.
+   No Change for Interface 14.
+   No Change for Interface 2.
+   No Change for Interface 3.
+   No Change for Interface 4.
+   Updated Interface 5 (Etag 8 -> 9).
+   No Change for Interface 6.
+   No Change for Interface 7.
+   No Change for Interface 8.
+   No Change for Interface 9.
+   No Change for Interface controller 1.
+   No Change for Spoke HA in Element DC-7K-1.
+   No Change for BGP Global Config 15822442812840164.
+   Created staticroute 15822442926340117.
+   No Change for Ntp default.
+   No Change for Toolkit 15810371911490031.
+ Element: Code is at correct version 5.2.1-b7.
+  Assigning Element DC-7K-2.
+  Element DC-7K-2 not yet in requested state(s): bound (is bound_in_progress). Waited so far 0 seconds out of 600.
+   No Change for Interface 1.
+   No Change for Interface 10.
+   No Change for Interface 11.
+   No Change for Interface 12.
+   No Change for Interface 13.
+   No Change for Interface 14.
+   No Change for Interface 2.
+   No Change for Interface 3.
+   No Change for Interface 4.
+   No Change for Interface 5.
+   No Change for Interface 6.
+   Updated Interface 7 (Etag 8 -> 9).
+   No Change for Interface 8.
+   No Change for Interface 9.
+   No Change for Interface controller 1.
+   No Change for Spoke HA in Element DC-7K-2.
+   No Change for BGP Global Config 15822442955080017.
+   Created staticroute 15822443076120056.
+   No Change for Ntp default.
+   No Change for Toolkit 15807654964760203.
 No Change for Site Datacenter 1 state (active).
 DONE
