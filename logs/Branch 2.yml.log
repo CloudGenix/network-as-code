@@ -1,36 +1,6 @@
-Updated Site Branch 2 (Etag 7 -> 8).
+No Change for Site Branch 2.
  No Change for Waninterface Circuit to AT&T.
  No Change for Waninterface Circuit to Comcast.
  No Change for Spoke Cluster Branch 2 HA Group.
-Un-assigning Element BR2-3K-2(30-003408-1258) bound to 15810529935270122.
- Removing LAN Networks/WAN Interfaces from wan 3.
- Removing LAN Networks/WAN Interfaces from wan 4.
- Removing LAN Networks/WAN Interfaces from lan 2.
- Removing LAN Networks/WAN Interfaces from wan 1.
- Removing LAN Networks/WAN Interfaces from internet bypass 1.
- Removing LAN Networks/WAN Interfaces from internet 1.
- Removing LAN Networks/WAN Interfaces from lan 4.
- Removing LAN Networks/WAN Interfaces from lan 1.
- Removing LAN Networks/WAN Interfaces from wan 2.
- Removing LAN Networks/WAN Interfaces from controller 1.
- Removing LAN Networks/WAN Interfaces from lan 3.
- Removing LAN Networks/WAN Interfaces from internet 2internet bypass 2.
- Removing any leftover Element Security Zones and Spoke HA from BR2-3K-2:
-   No Change for Spoke HA in Element BR2-3K-2.
-Un-assigning Element BR2-3K-1(30-001471-6985) bound to 15810529935270122.
- Removing LAN Networks/WAN Interfaces from internet 2.
- Removing LAN Networks/WAN Interfaces from wan 4.
- Removing LAN Networks/WAN Interfaces from internet bypass 2.
- Removing LAN Networks/WAN Interfaces from controller 1.
- Removing LAN Networks/WAN Interfaces from wan 2.
- Removing LAN Networks/WAN Interfaces from lan 3.
- Removing LAN Networks/WAN Interfaces from wan 1.
- Removing LAN Networks/WAN Interfaces from lan 2.
- Removing LAN Networks/WAN Interfaces from wan 3.
- Removing LAN Networks/WAN Interfaces from lan 1.
- Removing LAN Networks/WAN Interfaces from lan 4.
- Removing LAN Networks/WAN Interfaces from internet 1internet bypass 1.
- Removing any leftover Element Security Zones and Spoke HA from BR2-3K-1:
-   No Change for Spoke HA in Element BR2-3K-1.
 No Change for Site Branch 2 state (active).
 DONE
