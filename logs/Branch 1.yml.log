@@ -1,4 +1,4 @@
-Updated Site Branch 1 (Etag 11 -> 12).
+Updated Site Branch 1 (Etag 12 -> 13).
  No Change for Waninterface Circuit to Comcast.
  No Change for Waninterface Circuit to Verizon.
  No Change for Spoke Cluster Branch1 HA Group.
@@ -9,7 +9,7 @@ Updated Site Branch 1 (Etag 11 -> 12).
    No Change for Interface 2.
    No Change for Interface 3.
    No Change for Interface controller.
-   No Change for Spoke HA in Element BR1-2K-1.
+   Updating Spoke HA for Element BR1-2K-1.
    No Change for BGP Global Config 15822229368370135.
    No Change for Ntp default.
    No Change for Toolkit 15822216568030135.
@@ -18,7 +18,7 @@ Updated Site Branch 1 (Etag 11 -> 12).
    No Change for Interface 45.
    No Change for Interface 1.
    No Change for Interface 2.
-   Updated Interface 3 (Etag 11 -> 12).
+   No Change for Interface 3.
    No Change for Interface controller.
    No Change for Spoke HA in Element BR1-2K-2.
    No Change for BGP Global Config 15822222398100050.
