@@ -6,12 +6,12 @@ sites v4.4:
     address:
       city: Houston
       country: United States
-      post_code: '60642'
+      post_code: '95134'
       state: TX
       street: 501 Crawford St.
       street2:
     admin_state: active
-    description: "Branch Site #1 + Andrew_L  edit"
+    description: "Branch Site #1"
     element_cluster_role: SPOKE
     elements v2.3:
       BR1-2K-1:
@@ -41,7 +41,6 @@ sites v4.4:
               dhcp_config:
               dns_v4_config:
                 name_servers:
-                - 8.8.8.8
                 - 8.8.4.4
                 - 10.1.100.10
               routes:
