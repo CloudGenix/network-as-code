@@ -11,7 +11,7 @@ sites v4.4:
       street: 501 Crawford St.
       street2:
     admin_state: active
-    description: "Branch Site #1 + Andrew_L edit"
+    description: "Branch Site #1 + Andrew_L  edit"
     element_cluster_role: SPOKE
     elements v2.3:
       BR1-2K-1:
