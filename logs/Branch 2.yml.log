@@ -1,15 +1,15 @@
-Updated Site Branch 2 (Etag 8 -> 9).
+WARNING: sites Config and SDK minor version mismatch: Config: v4.4, SDK v4.5. Attempting to continue, will use SDK version.
+Updated Site Branch 2 (Etag 9 -> 10).
  No Change for Waninterface Circuit to AT&T.
  No Change for Waninterface Circuit to Comcast.
  No Change for Spoke Cluster Branch 2 HA Group.
  Element: Code is at correct version 5.2.1-b7.
-  Assigning Element BR2-3K-1.
-  Element BR2-3K-1 not yet in requested state(s): bound (is bound_in_progress). Waited so far 0 seconds out of 600.
-   Updated Interface internet 1internet bypass 1 (Etag 11 -> 12).
+  No Change for Element BR2-3K-1.
+   No Change for Interface internet 1internet bypass 1.
    No Change for Interface controller 1.
-   Updated Interface internet 2 (Etag 15 -> 16).
+   No Change for Interface internet 2.
    No Change for Interface internet bypass 2.
-   Updated Interface lan 1 (Etag 18 -> 19).
+   No Change for Interface lan 1.
    No Change for Interface lan 2.
    No Change for Interface lan 3.
    No Change for Interface lan 4.
@@ -17,18 +17,17 @@ Updated Site Branch 2 (Etag 8 -> 9).
    No Change for Interface wan 2.
    No Change for Interface wan 3.
    No Change for Interface wan 4.
-   Updating Spoke HA for Element BR2-3K-1.
+   No Change for Spoke HA in Element BR2-3K-1.
    No Change for BGP Global Config 15822442451610090.
    No Change for Ntp default.
    No Change for Toolkit 15807722204590143.
  Element: Code is at correct version 5.2.1-b7.
-  Assigning Element BR2-3K-2.
-  Element BR2-3K-2 not yet in requested state(s): bound (is bound_in_progress). Waited so far 0 seconds out of 600.
-   Updated Interface internet 2internet bypass 2 (Etag 7 -> 8).
+  No Change for Element BR2-3K-2.
+   No Change for Interface internet 2internet bypass 2.
    No Change for Interface controller 1.
-   Updated Interface internet 1 (Etag 10 -> 11).
+   No Change for Interface internet 1.
    No Change for Interface internet bypass 1.
-   Updated Interface lan 1 (Etag 14 -> 15).
+   No Change for Interface lan 1.
    No Change for Interface lan 2.
    No Change for Interface lan 3.
    No Change for Interface lan 4.
@@ -36,7 +35,7 @@ Updated Site Branch 2 (Etag 8 -> 9).
    No Change for Interface wan 2.
    No Change for Interface wan 3.
    No Change for Interface wan 4.
-   Updating Spoke HA for Element BR2-3K-2.
+   No Change for Spoke HA in Element BR2-3K-2.
    No Change for BGP Global Config 15822442638940128.
    No Change for Ntp default.
    No Change for Toolkit 15807722155430052.
