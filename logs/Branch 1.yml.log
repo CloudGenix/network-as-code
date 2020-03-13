@@ -1,11 +1,12 @@
-Updated Site Branch 1 (Etag 13 -> 14).
+WARNING: sites Config and SDK minor version mismatch: Config: v4.4, SDK v4.5. Attempting to continue, will use SDK version.
+Updated Site Branch 1 (Etag 15 -> 16).
  No Change for Waninterface Circuit to Comcast.
  No Change for Waninterface Circuit to Verizon.
  No Change for Spoke Cluster Branch1 HA Group.
  Element: Code is at correct version 5.2.1-b7.
   No Change for Element BR1-2K-1.
    No Change for Interface 45.
-   Updated Interface 1 (Etag 4 -> 5).
+   No Change for Interface 1.
    No Change for Interface 2.
    No Change for Interface 3.
    No Change for Interface controller.
@@ -21,7 +22,7 @@ Updated Site Branch 1 (Etag 13 -> 14).
    No Change for Interface 3.
    No Change for Interface controller.
    No Change for Spoke HA in Element BR1-2K-2.
-   No Change for BGP Global Config 15822222398100050.
+   No Change for BGP Global Config 15831771722080099.
    No Change for Ntp default.
    No Change for Toolkit 15810524358500001.
 No Change for Site Branch 1 state (active).
