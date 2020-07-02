@@ -4,11 +4,11 @@ version: 1.0
 sites v4.4:
   Branch 1:
     address:
-      city: Houston
+      city: Chicago
       country: United States
-      post_code: '95134'
-      state: TX
-      street: 501 Crawford St.
+      post_code: '60622'
+      state: IL
+      street: 701 N Milwaukee ave
       street2:
     admin_state: active
     description: "Branch Site #1 - Mike is testing Here"
@@ -546,8 +546,8 @@ sites v4.4:
         vpn_to_vpn_forwarding: false
     location:
       description:
-      latitude: 29.7604
-      longitude: -95.358421
+      latitude: 41.8945098
+      longitude: -87.6545033
     nat_policysetstack_id: Default NAT PolicySet Stack
     network_policysetstack_id: Default Path Policyset Stack (Simple)
     policy_set_id:
