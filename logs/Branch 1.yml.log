@@ -1,19 +1,40 @@
 WARNING: CloudGenix Python SDK upgrade available. SDKs are typically deprecated 6 months after release of a new version.
-	Latest Version: 5.3.1b1
-	Current Version: 5.2.3b1
+	Latest Version: 5.4.3b1
+	Current Version: 5.3.1b1
 	For more info, see 'https://github.com/cloudgenix/sdk-python'. Additionally, this message can be suppressed by instantiating the API with API(update_check=False).
 
 WARNING: CloudGenix Python SDK upgrade available. SDKs are typically deprecated 6 months after release of a new version.
-	Latest Version: 5.3.1b1
-	Current Version: 5.2.3b1
+	Latest Version: 5.4.3b1
+	Current Version: 5.3.1b1
 	For more info, see 'https://github.com/cloudgenix/sdk-python'. Additionally, this message can be suppressed by instantiating the API with API(update_check=False).
 
 WARNING: sites Config and SDK minor version mismatch: Config: v4.4, SDK v4.5. Attempting to continue, will use SDK version.
-Updated Site Branch 1 (Etag 16 -> 17).
+WARNING: interfaces Config and SDK minor version mismatch: Config: v4.7, SDK v4.8. Attempting to continue, will use SDK version.
+WARNING: interfaces Config and SDK minor version mismatch: Config: v4.7, SDK v4.8. Attempting to continue, will use SDK version.
+Updated Site Branch 1 (Etag 17 -> 18).
  No Change for Waninterface Circuit to Comcast.
  No Change for Waninterface Circuit to Verizon.
  No Change for Spoke Cluster Branch1 HA Group.
- Element: Code is at correct version 5.2.1-b7.
+ Element: Changing element from 5.2.1-b7 to 5.4.3-b9.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 0 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 10 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 20 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 30 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 40 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 50 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 60 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 70 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 80 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 90 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 100 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 110 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 120 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 130 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 140 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 150 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 160 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 170 seconds out of 600.
+  Element BR1-2K-1 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 180 seconds out of 600.
   No Change for Element BR1-2K-1.
    No Change for Interface 45.
    No Change for Interface 1.
@@ -22,9 +43,35 @@ Updated Site Branch 1 (Etag 16 -> 17).
    No Change for Interface controller.
    No Change for Spoke HA in Element BR1-2K-1.
    No Change for BGP Global Config 15822229368370135.
-   No Change for Ntp default.
+   No Change for NTP 15822216284520110.
    No Change for Toolkit 15822216568030135.
- Element: Code is at correct version 5.2.1-b7.
+ Element: Changing element from 5.2.1-b7 to 5.4.3-b9.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 0 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 10 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 20 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 30 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 40 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 50 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 60 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 70 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 80 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 90 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 100 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 110 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 120 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 130 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 140 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 150 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 160 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 170 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 180 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 190 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 200 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 210 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 220 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 230 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 240 seconds out of 600.
+  Element BR1-2K-2 not yet at requested image: 5.4.3-b9 (is 5.2.1-b7). Waited so far 250 seconds out of 600.
   No Change for Element BR1-2K-2.
    No Change for Interface 45.
    No Change for Interface 1.
@@ -33,7 +80,7 @@ Updated Site Branch 1 (Etag 16 -> 17).
    No Change for Interface controller.
    No Change for Spoke HA in Element BR1-2K-2.
    No Change for BGP Global Config 15831771722080099.
-   No Change for Ntp default.
+   No Change for NTP 15810524098640093.
    No Change for Toolkit 15810524358500001.
 No Change for Site Branch 1 state (active).
 DONE
