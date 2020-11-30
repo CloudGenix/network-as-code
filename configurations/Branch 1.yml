@@ -254,7 +254,7 @@ sites v4.4:
               stalepath_time: 120
           static v2.0: []
         serial_number: 20-001542-5046
-        software_version: 5.2.1-b7
+        software_version: 5.4.3-b9
         spoke_ha_config:
           cluster_id: Branch1 HA Group
           enable: true
@@ -519,7 +519,7 @@ sites v4.4:
               stalepath_time: 120
           static v2.0: []
         serial_number: 20-001638-7379
-        software_version: 5.2.1-b7
+        software_version: 5.4.3-b9
         spoke_ha_config:
           cluster_id: Branch1 HA Group
           enable: true
