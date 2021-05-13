@@ -4,14 +4,14 @@ version: 1.0
 sites v4.4:
   Branch 1:
     address:
-      city: Chicago
+      city: Milwaukee
       country: United States
-      post_code: '60622'
-      state: IL
-      street: 701 N Milwaukee ave
+      post_code: '53214'
+      state: WI
+      street: 1 Brewers Way
       street2:
     admin_state: active
-    description: "Branch Site #1 - Fix for Screenshot issues"
+    description: "Branch Site #1"
     element_cluster_role: SPOKE
     elements v2.3:
       BR1-2K-1:
