@@ -1,7 +1,9 @@
 ---
 type: cloudgenix template
 version: 1.0
-sites v4.4:
+# Created at 2021-05-13T21:13:59.437263Z
+# by travis-worker@cloudgenix.com
+sites v4.5:
   Branch 2:
     address:
       city: Louisburg
@@ -11,20 +13,28 @@ sites v4.4:
       street: 103 W 42nd St
       street2:
     admin_state: active
-    description: "Mike Lives Here"
+    description: Carls House
     element_cluster_role: SPOKE
-    elements v2.3:
+    elements v2.4:
       BR2-3K-1:
         admin_action:
+        admin_renew_state:
         allowed_roles:
         - SPOKE
+        - HUB
+        application_probe v2.0:
+          description:
+          enable_probe: true
+          name: default-probe-configuration-15807721903740170
+          source_interface_id:
+          tags:
         cluster_insertion_mode:
         cluster_member_id:
         connected: true
         deployment_op:
-        description: "Element #1"
+        description: 'Element #1'
         element_security_zones v2.0: []
-        interfaces v4.7:
+        interfaces v4.10:
           controller 1:
             admin_up: true
             attached_lan_networks:
@@ -33,9 +43,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -52,8 +65,48 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
+            sub_interface:
+            tags:
+            type: port
+            used_for: none
+          controller 2:
+            admin_up: false
+            attached_lan_networks:
+            bound_interfaces:
+            bypass_pair:
+            description:
+            devicemgmt_policysetstack_id:
+            dhcp_relay:
+            directed_broadcast: false
+            ethernet_port:
+              full_duplex: false
+              speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
+            ipv4_config:
+              dhcp_config:
+              dns_v4_config:
+              routes:
+              static_config:
+              type: dhcp
+            mac_address:
+            mtu: 1500
+            nat_address:
+            nat_pools:
+            nat_port: 0
+            nat_zone_id:
+            network_context_id:
+            parent:
+            pppoe_config:
+            scope: local
+            secondary_ip_configs:
+            service_link_config:
+            site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -70,9 +123,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -89,9 +145,11 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
             - Circuit to AT&T
+            static_arp_configs:
             sub_interface:
             tags:
             type: bypasspair
@@ -104,9 +162,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -123,9 +184,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
-            - Circuit to Comcast
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -138,9 +200,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -152,8 +217,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -166,15 +233,19 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
                 name_servers:
                 - 8.8.8.8
                 - 8.8.4.4
+                - 10.10.1.1
               routes:
               static_config:
                 address: 10.1.200.1/24
@@ -189,8 +260,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: global
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -203,9 +276,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -217,8 +293,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -231,9 +309,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -245,8 +326,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -259,9 +342,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -273,8 +359,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -287,9 +375,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -301,8 +392,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -315,9 +408,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -329,8 +425,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -343,9 +441,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -357,8 +458,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -371,9 +474,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -385,8 +491,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -426,7 +534,7 @@ sites v4.4:
         role: SPOKE
         routing:
           bgp:
-            global_config v2.1:
+            global_config v2.2:
               admin_distance: 20
               adv_interval: 1
               graceful_restart: false
@@ -436,15 +544,16 @@ sites v4.4:
               maximum_paths: 1
               md5_secret:
               multi_hop_limit: 1
+              peer_auth_type: none
               peer_retry_time: 120
               prefix_adv_type:
               prefix_adv_type_to_lan: default
               prefixes_to_adv_to_wan:
               router_id:
               stalepath_time: 120
-          static v2.0: []
+          static v2.1: {}
         serial_number: 30-001471-6985
-        software_version: 5.2.1-b7
+        software_version: 5.4.3-b9
         spoke_ha_config:
           cluster_id: Branch 2 HA Group
           enable: true
@@ -458,6 +567,7 @@ sites v4.4:
               reduce_priority: 10
             - interface_id: lan 1
               reduce_priority: 20
+            waninterfaces:
         state: bound
         tags:
         tenant_id: '1236'
@@ -471,15 +581,23 @@ sites v4.4:
         vpn_to_vpn_forwarding: false
       BR2-3K-2:
         admin_action:
+        admin_renew_state:
         allowed_roles:
         - SPOKE
+        - HUB
+        application_probe v2.0:
+          description:
+          enable_probe: true
+          name: default-probe-configuration-15807721870710197
+          source_interface_id:
+          tags:
         cluster_insertion_mode:
         cluster_member_id:
         connected: true
         deployment_op:
-        description: "Element 2"
+        description: Element 2
         element_security_zones v2.0: []
-        interfaces v4.7:
+        interfaces v4.10:
           controller 1:
             admin_up: true
             attached_lan_networks:
@@ -488,9 +606,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -507,8 +628,48 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
+            sub_interface:
+            tags:
+            type: port
+            used_for: none
+          controller 2:
+            admin_up: false
+            attached_lan_networks:
+            bound_interfaces:
+            bypass_pair:
+            description:
+            devicemgmt_policysetstack_id:
+            dhcp_relay:
+            directed_broadcast: false
+            ethernet_port:
+              full_duplex: false
+              speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
+            ipv4_config:
+              dhcp_config:
+              dns_v4_config:
+              routes:
+              static_config:
+              type: dhcp
+            mac_address:
+            mtu: 1500
+            nat_address:
+            nat_pools:
+            nat_port: 0
+            nat_zone_id:
+            network_context_id:
+            parent:
+            pppoe_config:
+            scope: local
+            secondary_ip_configs:
+            service_link_config:
+            site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -521,9 +682,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -540,9 +704,11 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
             - Circuit to AT&T
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -559,9 +725,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -578,9 +747,11 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
             - Circuit to Comcast
+            static_arp_configs:
             sub_interface:
             tags:
             type: bypasspair
@@ -593,9 +764,12 @@ sites v4.4:
             description: ''
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -607,8 +781,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -621,9 +797,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
               dhcp_config:
               dns_v4_config:
@@ -644,8 +823,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: global
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -658,9 +839,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -672,8 +856,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -686,9 +872,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -700,8 +889,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -714,9 +905,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -728,8 +922,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -742,9 +938,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -756,8 +955,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -770,9 +971,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -784,8 +988,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -798,9 +1004,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -812,8 +1021,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -826,9 +1037,12 @@ sites v4.4:
             description:
             devicemgmt_policysetstack_id:
             dhcp_relay:
+            directed_broadcast: false
             ethernet_port:
               full_duplex: false
               speed: 0
+            ipfixcollectorcontext_id:
+            ipfixfiltercontext_id:
             ipv4_config:
             mac_address:
             mtu: 1500
@@ -840,8 +1054,10 @@ sites v4.4:
             parent:
             pppoe_config:
             scope: local
+            secondary_ip_configs:
             service_link_config:
             site_wan_interface_ids:
+            static_arp_configs:
             sub_interface:
             tags:
             type: port
@@ -881,7 +1097,7 @@ sites v4.4:
         role: SPOKE
         routing:
           bgp:
-            global_config v2.1:
+            global_config v2.2:
               admin_distance: 20
               adv_interval: 1
               graceful_restart: false
@@ -891,15 +1107,16 @@ sites v4.4:
               maximum_paths: 1
               md5_secret:
               multi_hop_limit: 1
+              peer_auth_type: none
               peer_retry_time: 120
               prefix_adv_type:
               prefix_adv_type_to_lan: default
               prefixes_to_adv_to_wan:
               router_id:
               stalepath_time: 120
-          static v2.0: []
+          static v2.1: {}
         serial_number: 30-003408-1258
-        software_version: 5.2.1-b7
+        software_version: 5.4.3-b9
         spoke_ha_config:
           cluster_id: Branch 2 HA Group
           enable: true
@@ -913,6 +1130,7 @@ sites v4.4:
               reduce_priority: 10
             - interface_id: lan 1
               reduce_priority: 20
+            waninterfaces:
         state: bound
         tags:
         tenant_id: '1236'
@@ -924,10 +1142,11 @@ sites v4.4:
           ssh_enabled: true
           ssh_outbound_enabled: false
         vpn_to_vpn_forwarding: false
+    extended_tags:
     location:
       description:
-      latitude: 40.75486755371094
-      longitude: -73.98418426513672
+      latitude: 40.754868
+      longitude: -73.984184
     nat_policysetstack_id: Default NAT PolicySet Stack
     network_policysetstack_id: Default Path Policyset Stack (Simple)
     policy_set_id:
@@ -941,7 +1160,7 @@ sites v4.4:
         preempt: true
         tags:
     tags:
-    waninterfaces v2.4:
+    waninterfaces v2.6:
       Circuit to AT&T:
         bfd_mode: aggressive
         bw_config_mode: manual
@@ -956,6 +1175,10 @@ sites v4.4:
         network_id: AT&T
         network_type: publicwan
         tags:
+        type: publicwan
+        use_for_application_reachability_probes:
+        use_for_controller_connections:
+        vpnlink_configuration:
       Circuit to Comcast:
         bfd_mode: aggressive
         bw_config_mode: manual
@@ -970,3 +1193,7 @@ sites v4.4:
         network_id: Comcast
         network_type: publicwan
         tags:
+        type: publicwan
+        use_for_application_reachability_probes:
+        use_for_controller_connections:
+        vpnlink_configuration:
