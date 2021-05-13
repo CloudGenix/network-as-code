@@ -13,6 +13,12 @@
 # load the common vars
 . scripts/script_includes.source
 
+# Check cloudgenix_config
+DO_SITE=`which do_site`
+echo -e "do_site script is ${DO_SITE}"
+# Dump help/version.
+do_site -h
+
 # Set up git for log commit back to master.
 echo -e "${WHITE}Setting GIT authentication/origin..${NC}"
 git config --global user.email "travis-worker-cloudgenix@travis-ci.org" 2>&1 2>&1 | indent
