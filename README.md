@@ -8,6 +8,16 @@
 # CloudGenix Network as Code Demo Environment
 Demo of a CloudGenix Network as Code Environment
 
+#### Archive notice.
+This proof-of-concept repository is being moved to "Archived" status, for a few reasons.
+* It's no longer maintained
+* It served it's purpouse (well, I might add.)
+* It's functionality will be replaced by a Prisma SD-WAN CI/CD CloudBlade.
+* [The Travis-CI oAuth security issue](https://github.blog/2022-04-15-security-alert-stolen-oauth-user-tokens/) made us remove Travis-CI integration as an abundance of caution - which broke this tool.
+
+If you have questions or would like some additional info - please feel free to reach out to @ebob9 or @ktanushree - Thanks!
+
+
 ### Concept
 Build an Enterprise-Class Remote Branch Office network using Coding tools and principles. Deploy, reconfigure at will.
 All changes are tracked and approved using traditional Git-flow tools.
